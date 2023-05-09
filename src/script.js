@@ -1,7 +1,4 @@
 'use strict';
-
-
-
 /**
  * PRELOAD
  *
@@ -15,8 +12,6 @@ window.addEventListener("load", function () {
     document.body.classList.add("loaded");
 });
 
-
-
 /**
  * add event listener on multiple elements
  */
@@ -26,8 +21,6 @@ const addEventOnElements = function (elements, eventType, callback) {
         elements[i].addEventListener(eventType, callback);
     }
 }
-
-
 
 /**
  * NAVBAR
@@ -44,8 +37,6 @@ const toggleNavbar = function () {
 }
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
-
-
 
 /**
  * HEADER & BACK TOP BTN
@@ -77,8 +68,6 @@ window.addEventListener("scroll", function () {
         backTopBtn.classList.remove("active");
     }
 });
-
-
 
 /**
  * HERO SLIDER
@@ -141,8 +130,6 @@ addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", function
 addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide);
 
 window.addEventListener("load", autoSlide);
-
-
 
 /**
  * PARALLAX EFFECT
