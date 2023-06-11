@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="src/shoppingCartItems.js" defer type="module"></script>
+    <script defer type="module" src="./src/shoppingCartItems.js"></script>
+
 </head>
 <body>
 
@@ -179,8 +180,9 @@
 
         <h2 class="headline-1 section-title text-center">Our Menu</h2>
 
-        <ul class="grid-list">
-            <div class="menu-container">
+        <div class="menu-container">
+            <ul class="grid-list">
+
                 <li>
                     <div class="menu-card hover:card">
                         <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
@@ -431,14 +433,11 @@
                                 <span class="text text-1">Add to cart</span>
                                 <span class="text text-2" aria-hidden="true">Add to cart</span>
                             </a>
-
                         </div>
-
                     </div>
                 </li>
-            </div>
-        </ul>
-
+            </ul>
+        </div>
         <!--
   - #FOOTER
 -->

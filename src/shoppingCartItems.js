@@ -1,8 +1,8 @@
-import {HttpClient} from "./server-client.js";
+import{HttpClient} from "./server-client";
 
-let client = new HttpClient()
 let list = [];
 const listDiv = $("#listOfItems")
+const client = new HttpClient()
 
 //---------
 // MenuTuples
@@ -98,26 +98,20 @@ function renderItems(list, listDiv){
 const menuContainer = document.querySelector('.menu-container');
 
 // Get only the buttons within the specific parent element
-const buttons = menuContainer.querySelectorAll('btn btn-primary');
+const buttons = menuContainer.querySelectorAll('.btn');
+
 
 // Add event listener to each button
-buttons.forEach(button => {
-    button.addEventListener('click', function() {
-        const buttonId = button.id;
-        console.log('Clicked button ID:', buttonId);
-        list.push(buttonId)
-        renderItems(list, listDiv)
-    });
-});
-
-
-
-/*const buttons = document.get('btn btn-primary');
-
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function() {
         const buttonId = buttons[i].id;
-        list.add(buttonId)
-        renderItems(list, $("#listOfItems"))
+        console.log('Clicked button ID:', buttonId);
+        for (let food of aviableFood){
+            if(food["Name"] === buttonId){
+                client.addNewDish(food["Name"], food["Price"], () => {})
+            }
+        }
+        list.push(buttonId)
+        //renderItems(list, listDiv)
     });
-}*/
+}
