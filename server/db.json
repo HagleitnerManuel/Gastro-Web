@@ -4,49 +4,50 @@
       "name": "Greek Salad",
       "price": "$25.50",
       "picture": "<img src=\"./src/images/menu-1.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Greek Salad\" class=\"img-cover\">",
+      "description": "Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.",
       "id": 1
     },
     {
       "name": "Lasagne",
       "price": "$40.00",
       "picture": "<img src=\"./src/images/menu-2.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Lasagne\"\nclass=\"img-cover\">",
+      "description": "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices",
       "id": 2
+    },
+    {
+      "name": "Butternut Pumpkin",
+      "price": "$10.00",
+      "picture": "<img src=\"./src/images/menu-3.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Butternut Pumpkin\"\nclass=\"img-cover\">",
+      "description": "Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.",
+      "id": 3
     },
     {
       "name": "Tokusen Wagyu",
       "price": "$39.00",
       "picture": "<img src=\"./src/images/menu-4.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Tokusen Wagyu\"\nclass=\"img-cover\">",
-      "id": 3
-    },
-    {
-      "name": "Opu Fish",
-      "price": "$49.00",
-      "picture": "<img src=\"./src/images/menu-6.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Opu Fish\"\nclass=\"img-cover\">",
+      "description": "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.",
       "id": 4
     },
     {
       "name": "Olivas Rellenas",
       "price": "$25.00",
       "picture": "<img src=\"./src/images/menu-5.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Olivas Rellenas\"\nclass=\"img-cover\">",
+      "description": "Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.",
       "id": 5
     },
     {
-      "name": "Capresse-Pasta",
-      "price": "$34.00",
-      "picture": "<img src=\"./src/images/menu-8.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Capresse-Pasta\"\nclass=\"img-cover\">",
+      "name": "Opu Fish",
+      "price": "$49.00",
+      "picture": "<img src=\"./src/images/menu-6.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Opu Fish\"\nclass=\"img-cover\">",
+      "description": "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices",
       "id": 6
     },
     {
       "name": "Capresse-Pasta",
       "price": "$34.00",
       "picture": "<img src=\"./src/images/menu-8.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Capresse-Pasta\"\nclass=\"img-cover\">",
+      "description": "Tomato Sauce, mozzarella cubes, basil, olive oil.",
       "id": 7
-    },
-    {
-      "name": "Capresse-Pasta",
-      "price": "$34.00",
-      "picture": "<img src=\"./src/images/menu-8.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Capresse-Pasta\"\nclass=\"img-cover\">",
-      "id": 8
     }
   ],
   "profile": {
