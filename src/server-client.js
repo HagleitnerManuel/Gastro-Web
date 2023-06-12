@@ -5,10 +5,11 @@ export class HttpClient {
         return await fetch(this.shoppingCartGeneralUrl).then(response => response.json())
     }
 
-    addNewDish(name, price, success) {
+    addNewDish(name, price,picture, success) {
         const data = {
             name: name,
             price: price,
+            picture: picture
         }
 
         fetch(this.shoppingCartGeneralUrl, {

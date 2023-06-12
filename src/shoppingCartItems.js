@@ -1,7 +1,6 @@
-import{HttpClient} from "./server-client";
+import{HttpClient} from "./server-client.js";
 
 let list = [];
-const listDiv = $("#listOfItems")
 const client = new HttpClient()
 
 //---------
@@ -9,35 +8,43 @@ const client = new HttpClient()
 //---------
 const greekSalad = {
     "Name": "Greek Salad",
-    "Price": "$25.50"
+    "Price": "$25.50",
+    "Picture": "<img src=\"./src/images/menu-1.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Greek Salad\" class=\"img-cover\">"
 }
 const lasagne = {
     "Name": "Lasagne",
-    "Price": "$40.00"
+    "Price": "$40.00",
+    "Picture": "<img src=\"./src/images/menu-2.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Lasagne\"\nclass=\"img-cover\">"
 }
 const butternutPumpkin = {
     "Name": "Butternut Pumpkin",
-    "Price": "$10.00"
+    "Price": "$10.00",
+    "Picture": "<img src=\"./src/images/menu-3.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Butternut Pumpkin\"\nclass=\"img-cover\">"
 }
 const tokusenWagyu = {
     "Name": "Tokusen Wagyu",
-    "Price": "$39.00"
+    "Price": "$39.00",
+    "Picture": "<img src=\"./src/images/menu-4.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Tokusen Wagyu\"\nclass=\"img-cover\">"
 }
 const olivasRellenas = {
     "Name": "Olivas Rellenas",
-    "Price": "$25.00"
+    "Price": "$25.00",
+    "Picture": "<img src=\"./src/images/menu-5.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Olivas Rellenas\"\nclass=\"img-cover\">"
 }
 const opuFish = {
     "Name": "Opu Fish",
-    "Price": "$49.00"
+    "Price": "$49.00",
+    "Picture": "<img src=\"./src/images/menu-6.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Opu Fish\"\nclass=\"img-cover\">"
 }
 const italianFishSalad = {
     "Name": "Italian Fish Salad",
-    "Price": "$27.50"
+    "Price": "$27.50",
+    "Picture": "<img src=\"./src/images/menu-7.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Italian Salad\"\nclass=\"img-cover\">"
 }
 const capressePasta = {
     "Name": "Capresse-Pasta",
-    "Price": "$34.00"
+    "Price": "$34.00",
+    "Picture": "<img src=\"./src/images/menu-8.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Capresse-Pasta\"\nclass=\"img-cover\">"
 }
 const aviableFood = [{
     greekSalad,
@@ -63,36 +70,41 @@ $(() =>{
     init();
 });
 
-function renderItems(list, listDiv){
-    let html;
-    function renderItem(item){
-        html += "<li>"
-        html += "<div class=\"menu-card hover:card\">"
-        html += "<figure class=\"card-banner img-holder\" style=\"--width: 100; --height: 100;\">"
-        html += `<img src=\"./src/images/menu-1.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"${item["Name"]}\" class=\"img-cover\">`
-        html += "</figure>"
-        html += "<div>"
-        html += "<div class=\"title-wrapper\">"
-        html += "<h3 class=\"title-3\">"
-        html += `<a href=\"#\" class=\"card-title\">${item["Name"]}</a>`
-        html += "</h3>"
-        html += `<span class=\"span title-2\">${item["Price"]}</span>`
-        html += "</div>"
-        html += "<p class=\"card-text label-1\"> Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese. </p>"
-        html += "<div style=\"clear: both;\"></div>"
-        html += "</div>"
-        html += "</div>"
-        html += " </li>"
-    }
-
-    for(let item of list){
-        for (let food of aviableFood){
-            if(item === food["Name"]){
-                renderItem(food)
-            }
+function selectFood(food, buttonId){
+    switch (buttonId){
+        case food.greekSalad.Name:{
+            client.addNewDish(food.greekSalad.Name, food.greekSalad.Price, food.greekSalad.Picture, () => {})
+            return food.greekSalad
+        }
+        case food.capressePasta.Name:{
+            client.addNewDish(food.capressePasta.Name, food.capressePasta.Price, food.capressePasta.Picture, () => {})
+            return food.capressePasta
+        }
+        case food.opuFish.Name:{
+            client.addNewDish(food.opuFish.Name, food.opuFish.Price, food.opuFish.Picture, () => {})
+            return food.opuFish
+        }
+        case food.lasagne.Name:{
+            client.addNewDish(food.lasagne.Name, food.lasagne.Price, food.lasagne.Picture, () => {})
+            return food.opuFish
+        }
+        case food.olivasRellenas.Name:{
+            client.addNewDish(food.olivasRellenas.Name, food.olivasRellenas.Price, food.olivasRellenas.Picture, () => {})
+            return food.olivasRellenas
+        }
+        case food.italianFishSalad.Name:{
+            client.addNewDish(food.italianFishSalad.Name, food.italianFishSalad.Price, food.italianFishSalad.Picture, () => {})
+            return food.italianFishSalad
+        }
+        case food.tokusenWagyu.Name: {
+            client.addNewDish(food.tokusenWagyu.Name, food.tokusenWagyu.Price, food.tokusenWagyu.Picture, () => {})
+            return food.tokusenWagyu
+        }
+        case food.butternutPumpkin.Name:{
+            client.addNewDish(food.butternutPumpkin.Name, food.butternutPumpkin.Price, food.butternutPumpkin.Picture, () => {})
+            return food.butternutPumpkin
         }
     }
-    listDiv.html(html);
 }
 
 const menuContainer = document.querySelector('.menu-container');
@@ -100,18 +112,18 @@ const menuContainer = document.querySelector('.menu-container');
 // Get only the buttons within the specific parent element
 const buttons = menuContainer.querySelectorAll('.btn');
 
-
 // Add event listener to each button
 for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', function() {
+    buttons[i].addEventListener('click', (e) => {
+        e.preventDefault()
         const buttonId = buttons[i].id;
-        console.log('Clicked button ID:', buttonId);
-        for (let food of aviableFood){
-            if(food["Name"] === buttonId){
-                client.addNewDish(food["Name"], food["Price"], () => {})
+        let avFood
+        for (let food of aviableFood) {
+            avFood = selectFood(food, buttonId)
+            if(avFood.Name === buttonId){
+                break;
             }
         }
-        list.push(buttonId)
-        //renderItems(list, listDiv)
+        list.push(avFood)
     });
 }
