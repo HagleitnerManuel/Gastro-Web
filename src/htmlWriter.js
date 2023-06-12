@@ -46,13 +46,9 @@ function renderItems(list, listDiv){
     }
     html += "</div>"
     otherHtml = `<span class=\"span title-2\" style="color: hsl(38, 61%, 73%); font-size: xx-large">$${totalCost.toFixed(2)}</span>`
-    otherHtml += "<nav class='navbar'>"
-    otherHtml += "<li class='navbar-item'>"
-    otherHtml += "<a href=login.html class=\"btn btn-secondary\">" +
-        "        <span class=\"text text-1\">Buy Now</span>" +
-        "    </a>"
-    otherHtml += "</li>"
-    otherHtml += "</nav>"
+    otherHtml += "<button style='content-visibility: visible'><a href=login.html class=\"btn btn-secondary\">" +
+        "        <span class=\"text text-1\">Buy Now</span><span class=\"text text-2\" aria-hidden=\"true\">Buy Now</span>" +
+        "    </a></button>"
     priceDiv.innerHTML = otherHtml
     listDiv.innerHTML = html;
 }
