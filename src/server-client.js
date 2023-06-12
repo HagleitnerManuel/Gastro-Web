@@ -1,6 +1,7 @@
 export class HttpClient {
     baseUrl = "http://localhost:3000"
     shoppingCartGeneralUrl = `${this.baseUrl}/shoppingCart`
+    loginDataUrl = `${this.baseUrl}/login`
     async getAllDishes() {
         return await fetch(this.shoppingCartGeneralUrl).then(response => response.json())
     }
