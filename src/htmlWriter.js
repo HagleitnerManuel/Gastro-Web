@@ -15,9 +15,7 @@ $(() =>{
 
 function renderItems(list, listDiv){
     let html = "<div class=\"container\">";
-    let otherHtml = "<a href=\"login.html\" class=\"btn btn-secondary\">\n" +
-                        "        <span class=\"text text-1\">Buy Now</span>\n" +
-                    "    </a>"
+    let otherHtml
     function renderItem(item){
         html += "<li style='padding-top: 5rem'>"
         html += "<div class=\"menu-card hover:card\">"
@@ -47,7 +45,14 @@ function renderItems(list, listDiv){
         totalCost += parseInt(trimmedPrice, 10)
     }
     html += "</div>"
-    otherHtml += `<span class=\"span title-2\" style="color: hsl(38, 61%, 73%); font-size: xx-large">$${totalCost.toFixed(2)}</span>`
+    otherHtml = `<span class=\"span title-2\" style="color: hsl(38, 61%, 73%); font-size: xx-large">$${totalCost.toFixed(2)}</span>`
+    otherHtml += "<nav class='navbar'>"
+    otherHtml += "<li class='navbar-item'>"
+    otherHtml += "<a href=login.html class=\"btn btn-secondary\">" +
+        "        <span class=\"text text-1\">Buy Now</span>" +
+        "    </a>"
+    otherHtml += "</li>"
+    otherHtml += "</nav>"
     priceDiv.innerHTML = otherHtml
     listDiv.innerHTML = html;
 }
