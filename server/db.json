@@ -82,11 +82,17 @@
       "id": 6
     }
   ],
-
   "bookedTables": [
-
+    {
+      "name": "Bajtur",
+      "phone": "0660 7449142",
+      "person": "5-person",
+      "date": "2023-06-12",
+      "time": "02:00pm",
+      "message": "Test",
+      "id": 1
+    }
   ],
-
   "profile": {
     "name": "wmc"
   }

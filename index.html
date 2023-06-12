@@ -11,6 +11,7 @@
     -->
     <title>Fireside Gastro - Amazing & Delicious Food</title>
     <link rel="stylesheet" href="style.css">
+    <script defer type="module" src="src/tableBooker.js"></script>
 
     <!--
       - favicon
@@ -491,26 +492,19 @@
 
                 <div class="form reservation-form bg-black-10">
 
-                    <form action="" class="form-left">
-
+                    <form action="" class="form-left" id="reservationForm">
                         <h2 class="headline-1 text-center">Online Reservation</h2>
-
                         <p class="form-text text-center">
                             Booking request <a href="tel:+88123123456" class="link">+88-123-123456</a>
                             or fill out the order form
                         </p>
-
                         <div class="input-wrapper">
-                            <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
-
-                            <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+                            <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field" required>
+                            <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field" required>
                         </div>
-
                         <div class="input-wrapper">
-
                             <div class="icon-wrapper">
                                 <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
                                 <select name="person" class="input-field">
                                     <option value="1-person">1 Person</option>
                                     <option value="2-person">2 Person</option>
@@ -520,22 +514,16 @@
                                     <option value="6-person">6 Person</option>
                                     <option value="7-person">7 Person</option>
                                 </select>
-
                                 <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                             </div>
-
                             <div class="icon-wrapper">
                                 <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-
-                                <input type="date" name="reservation-date" class="input-field">
-
+                                <input type="date" name="reservation-date" class="input-field" required>
                                 <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                             </div>
-
                             <div class="icon-wrapper">
                                 <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                                <select name="person" class="input-field">
+                                <select name="reservation-time" class="input-field" required>
                                     <option value="08:00am">08 : 00 am</option>
                                     <option value="09:00am">09 : 00 am</option>
                                     <option value="010:00am">10 : 00 am</option>
@@ -552,20 +540,14 @@
                                     <option value="09:00pm">09 : 00 pm</option>
                                     <option value="10:00pm">10 : 00 pm</option>
                                 </select>
-
                                 <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                             </div>
-
                         </div>
-
                         <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
-
                         <button type="submit" class="btn btn-secondary">
                             <span class="text text-1">Book A Table</span>
-
                             <span class="text text-2" aria-hidden="true">Book A Table</span>
                         </button>
-
                     </form>
 
                 </div>
