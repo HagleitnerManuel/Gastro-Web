@@ -5,17 +5,6 @@
  * loading will be end after document is loaded
  */
 
-const wrapper = document.querySelector(".wrapper");
-const loginLink = document.querySelector(".login-link");
-const registerLinkId =document.getElementById('register-link')
-
-registerLinkId.addEventListener('click', ()=> {
-    wrapper.classList.add('active');
-});
-
-loginLink.addEventListener('click', ()=> {
-    wrapper.classList.remove('active');
-});
 
 const preloader = document.querySelector("[data-preaload]");
 window.addEventListener("load", function () {
@@ -32,9 +21,6 @@ const addEventOnElements = function (elements, eventType, callback) {
         elements[i].addEventListener(eventType, callback);
     }
 }
-
-
-
 /**
  * NAVBAR
  */
@@ -82,6 +68,17 @@ window.addEventListener("scroll", function () {
     }
 });
 
+const wrapper = document.querySelector(".wrapper");
+const loginLink = document.querySelector(".login-link");
+const registerLinkId =document.getElementById('register-link')
+
+registerLinkId.addEventListener('click', ()=> {
+    wrapper.classList.add('active');
+});
+
+loginLink.addEventListener('click', ()=> {
+    wrapper.classList.remove('active');
+});
 /**
  * HERO SLIDER
  */
