@@ -5,8 +5,19 @@
  * loading will be end after document is loaded
  */
 
-const preloader = document.querySelector("[data-preaload]");
+const wrapper = document.querySelector(".wrapper");
+const loginLink = document.querySelector(".login-link");
+const registerLinkId =document.getElementById('register-link')
 
+registerLinkId.addEventListener('click', ()=> {
+    wrapper.classList.add('active');
+});
+
+loginLink.addEventListener('click', ()=> {
+    wrapper.classList.remove('active');
+});
+
+const preloader = document.querySelector("[data-preaload]");
 window.addEventListener("load", function () {
     preloader.classList.add("loaded");
     document.body.classList.add("loaded");
@@ -21,6 +32,8 @@ const addEventOnElements = function (elements, eventType, callback) {
         elements[i].addEventListener(eventType, callback);
     }
 }
+
+
 
 /**
  * NAVBAR
@@ -131,10 +144,10 @@ addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide
 
 window.addEventListener("load", autoSlide);
 
+
 /**
  * PARALLAX EFFECT
  */
-
 const parallaxItems = document.querySelectorAll("[data-parallax-item]");
 
 let x, y;
@@ -156,13 +169,3 @@ window.addEventListener("mousemove", function (event) {
 
 });
 
-const wrapper = document.querySelector('.wrapper')
-const loginLink = document.querySelector('.login-link')
-const registerLink = document.querySelector('.register-link')
-
-registerLink.addEventListener('click', () => {
-    wrapper.classList.add('active')
-})
-loginLink.addEventListener('click', () => {
-    wrapper.classList.remove('active')
-})

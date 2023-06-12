@@ -1722,6 +1722,7 @@ textarea.input-field {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     transition: height .2s ease;
 }
 
@@ -1735,7 +1736,8 @@ textarea.input-field {
 }
 
 .wrapper .form-box.login{
-    /* display: none;*/
+    transition: transform .18s ease;
+    transform: translateX(0);
 }
 
 .wrapper.active .form-box.login{
@@ -1745,25 +1747,15 @@ textarea.input-field {
 
 .wrapper .form-box.register{
     position: absolute;
+    transition: none;
     transform: translateX(400px);
 }
 
-.wrapper .icon-close{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45px;
-    height: 45px;
-    background: var(--gold-crayola);
-    font-size: 2em;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 20px;
-    cursor: pointer;
-    z-index: 1;
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
 }
+
 
 .form-box h2{
     font-size: 2em;
@@ -1817,11 +1809,12 @@ textarea.input-field {
 .remember-forgot{
     font-size: .9em;
     font-weight: 500;
-    margin: -15px 0 15px;
+    /* margin: -10px 0 15px;*/
     display: flex;
     justify-content: space-between;
 
 }
+
 
 .remember-forgot label input{
     accent-color: black;
@@ -1867,3 +1860,6 @@ textarea.input-field {
     text-decoration: underline;
 }
 
+.labelCheck{
+    width: 100%;
+}
