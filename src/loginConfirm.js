@@ -3,11 +3,13 @@ import{HttpClient} from "./server-client.js";
 const client = new HttpClient();
 const loginForm = document.getElementById("login-form");
 
-loginForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+loginForm.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-    const email = loginForm.elements.email.value;
-    const password = loginForm.elements.password.value;
+    const email = loginForm.mail.value;
+    const password = loginForm.password.value;
+    console.log(email)
+    console.log(password)
 
     if (!email || !password) {
         alert("Please enter both email and password.");
@@ -24,8 +26,9 @@ loginForm.addEventListener("submit", function (event) {
 });
 
 function saveLoginData(loginData) {
+    console.log(client.loginDataUrl)
     fetch(client.loginDataUrl, {
-        method: "PATCH",
+        method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
@@ -38,9 +41,5 @@ function saveLoginData(loginData) {
                 alert("Failed to save login data.");
             }
         })
-        .catch((error) => {
-            alert("An error occurred while saving login data.");
-            console.error(error);
-        });
 }
 
