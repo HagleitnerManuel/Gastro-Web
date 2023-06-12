@@ -1895,3 +1895,34 @@ textarea.input-field {
 .login-register p a:hover{
     text-decoration: underline;
 }
+
+.chef-container {
+    display: flex;
+    align-items: center;
+}
+
+.text-container {
+    text-align: center;
+    margin-left: 10em;
+    font-family: var(--fontFamily-dm_sans);
+    font-size: 2rem;
+}
+
+#youngChefs{
+    margin-bottom: 1em;
+}
+
+.picturesYoung{
+    border-radius: 2em;
+    border: 2px solid var(--gold-crayola);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    margin-top: 2em;
+}
+
+.backgroundBlur{
+    backdrop-filter: blur(15px);
+    padding: 2em;
+    width: 250%;
+    border-radius: 7em;
+    margin-left: -16em;
+}

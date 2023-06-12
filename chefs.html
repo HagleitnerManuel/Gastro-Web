@@ -5,6 +5,9 @@
     <title>Our chefs - Fireside Gastro</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preload" as="image" href="./src/images/hero-slider-1.jpg">
+    <link rel="preload" as="image" href="./src/images/hero-slider-2.jpg">
+    <link rel="preload" as="image" href="./src/images/hero-slider-3.jpg">
 </head>
 <body>
 
@@ -109,7 +112,7 @@
                 </li>
 
                 <li class="navbar-item">
-                    <a href="#" class="navbar-link hover-underline">
+                    <a href="#footerPage" class="navbar-link hover-underline">
                         <div class="separator"></div>
 
                         <span class="span">Contact</span>
@@ -141,7 +144,11 @@
 
         </nav>
 
-        <a href="#" class="btn btn-secondary">
+        <a href="shoppingCart.html" class="navbar-link hover-underline" style="margin-right: 2.5rem">
+            <img src="src/images/shoppingCart.png" height="50" width="70"/>
+        </a>
+
+        <a href="index.html" class="btn btn-secondary">
             <span class="text text-1">Find A Table</span>
 
             <span class="text text-2" aria-hidden="true">Find A Table</span>
@@ -151,6 +158,7 @@
 
             <span class="text text-2" aria-hidden="true">Login</span>
         </a>
+
         <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
             <span class="line line-1"></span>
             <span class="line line-2"></span>
@@ -162,10 +170,88 @@
     </div>
 </header>
 
+<main>
+    <article>
+        <section class="hero text-center" aria-label="home" id="home">
+
+            <ul class="hero-slider" data-hero-slider>
+
+                <li class="slider-item active" data-hero-slider-item>
+
+                    <div class="slider-bg">
+                        <img src="./src/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+                    </div>
+                    <section class="backgroundBlur">
+                        <h2 class="headline-1 section-title text-center" id="youngChefs">Our Chefs</h2>
+                        <section class="chefs">
+                            <div class="chef-container">
+                                <img src="./src/images/borzi.jpg" alt="Fireside Gastro - Home" width="120" height="100" class="picturesYoung">
+                                <div class="text-container">
+                                    <p>Mihai Borza</p>
+                                    <p>Chef / Co-Manager</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="chefs">
+                            <div class="chef-container">
+                                <img src="./src/images/image.png" alt="Fireside Gastro - Home" width="120" height="60" class="picturesYoung">
+                                <div class="text-container">
+                                    <p>Manuel Hagleitner</p>
+                                    <p>Second Chef / Manager</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="chefs">
+                            <div class="chef-container">
+                                <img src="./src/images/sloganPic.png" alt="Fireside Gastro - Home" width="120" height="60" class="picturesYoung">
+                                <div class="text-container">
+                                    <p>Bajtur Berg</p>
+                                    <p>Masterchef / Waiter</p>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+
+                </li>
+            </ul>
+        </section>
+    </article>
+</main>
+
 <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
     <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
 </a>
 
+<footer class="footer section has-bg-image text-center"
+        style="background-image: url('./src/images/footer-bg.jpg')" id="footerPage">
+    <div class="container">
+
+        <div class="footer-top grid-list">
+
+            <ul class="footer-list">
+
+                <li>
+                    <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+                </li>
+
+                <li>
+                    <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+                </li>
+
+                <li>
+                    <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+                </li>
+
+                <li>
+                    <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</footer>
 <script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -48,6 +48,55 @@
       "picture": "<img src=\"./src/images/menu-8.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Capresse-Pasta\"\nclass=\"img-cover\">",
       "description": "Tomato Sauce, mozzarella cubes, basil, olive oil.",
       "id": 7
+    },
+    {
+      "name": "Greek Salad",
+      "price": "$25.50",
+      "picture": "<img src=\"./src/images/menu-1.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Greek Salad\" class=\"img-cover\">",
+      "description": "Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.",
+      "id": 8
+    },
+    {
+      "name": "Lasagne",
+      "price": "$40.00",
+      "picture": "<img src=\"./src/images/menu-2.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Lasagne\"\nclass=\"img-cover\">",
+      "description": "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices",
+      "id": 9
+    },
+    {
+      "name": "Lasagne",
+      "price": "$40.00",
+      "picture": "<img src=\"./src/images/menu-2.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Lasagne\"\nclass=\"img-cover\">",
+      "description": "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices",
+      "id": 10
+    },
+    {
+      "name": "Lasagne",
+      "price": "$40.00",
+      "picture": "<img src=\"./src/images/menu-2.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Lasagne\"\nclass=\"img-cover\">",
+      "description": "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices",
+      "id": 11
+    },
+    {
+      "name": "Lasagne",
+      "price": "$40.00",
+      "picture": "<img src=\"./src/images/menu-2.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Lasagne\"\nclass=\"img-cover\">",
+      "description": "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices",
+      "id": 12
+    },
+    {
+      "name": "Lasagne",
+      "price": "$40.00",
+      "picture": "<img src=\"./src/images/menu-2.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Lasagne\"\nclass=\"img-cover\">",
+      "description": "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices",
+      "id": 13
+    },
+    {
+      "name": "Lasagne",
+      "price": "$40.00",
+      "picture": "<img src=\"./src/images/menu-2.png\" width=\"100\" height=\"100\" loading=\"lazy\" alt=\"Lasagne\"\nclass=\"img-cover\">",
+      "description": "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices",
+      "id": 14
     }
   ],
   "loginData": [
@@ -80,6 +129,16 @@
       "email": "Bajttur@gmail.com",
       "password": "tjtj",
       "id": 6
+    },
+    {
+      "email": "mihaiitza@gmail.com",
+      "password": "bajtur",
+      "id": 7
+    },
+    {
+      "email": "mihaiitza@gmail.com",
+      "password": "asdadwads",
+      "id": 8
     }
   ],
   "bookedTables": [
@@ -91,6 +150,15 @@
       "time": "02:00pm",
       "message": "Test",
       "id": 1
+    },
+    {
+      "name": "Mihai Borza",
+      "phone": "+436706062962",
+      "person": "7-person",
+      "date": "2023-06-28",
+      "time": "09:00pm",
+      "message": "Bitte ohne Besteck",
+      "id": 2
     }
   ],
   "profile": {
