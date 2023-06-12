@@ -50,14 +50,43 @@
       "id": 7
     }
   ],
-
   "loginData": [
     {
       "email": "dsfsdf@fdf",
       "password": "asdasd",
       "id": 1
+    },
+    {
+      "email": "Bajttur@gmail.com",
+      "password": "test",
+      "id": 2
+    },
+    {
+      "email": "Sewrv@fdsf",
+      "password": "asdasd",
+      "id": 3
+    },
+    {
+      "email": "Bajttur@gmail.com",
+      "password": "asdasd",
+      "id": 4
+    },
+    {
+      "email": "Bajttur@gmail.com",
+      "password": "asdasd",
+      "id": 5
+    },
+    {
+      "email": "Bajttur@gmail.com",
+      "password": "tjtj",
+      "id": 6
     }
   ],
+
+  "bookedTables": [
+
+  ],
+
   "profile": {
     "name": "wmc"
   }

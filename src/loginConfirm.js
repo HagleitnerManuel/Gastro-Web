@@ -2,14 +2,13 @@ import{HttpClient} from "./server-client.js";
 
 const client = new HttpClient();
 const loginForm = document.getElementById("login-form");
+let loggedInEmail = null;
 
 loginForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
     const email = loginForm.mail.value;
     const password = loginForm.password.value;
-    console.log(email)
-    console.log(password)
 
     if (!email || !password) {
         alert("Please enter both email and password.");
@@ -22,11 +21,27 @@ loginForm.addEventListener("submit", function (e) {
     };
 
     saveLoginData(loginData);
+    loggedInEmail = email;
     loginForm.reset();
+    window.location.href = "index.html";
+
+
+    updateLoggedInEmail();
 });
 
+function updateLoggedInEmail() {
+    const currLogged = document.getElementById("currLogged");
+    if (loggedInEmail) {
+        currLogged.innerHTML = "Logged in as:" + loggedInEmail;
+    } else {
+        currLogged.innerHTML = "Not logged in";
+    }
+}
+
+updateLoggedInEmail();
+
+
 function saveLoginData(loginData) {
-    console.log(client.loginDataUrl)
     fetch(client.loginDataUrl, {
         method: "POST",
         headers: {
