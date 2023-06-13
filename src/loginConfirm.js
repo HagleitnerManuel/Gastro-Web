@@ -2,7 +2,19 @@ import{HttpClient} from "./server-client.js";
 
 const client = new HttpClient();
 const loginForm = document.getElementById("login-form");
+let check;
 let loggedInEmail = null;
+
+function updateLoggedInEmail() {
+    const currLogged = document.getElementById("currLogged");
+    if (loggedInEmail !== null) {
+        currLogged.innerHTML += loggedInEmail;
+    } else {
+        currLogged.innerHTML += "Not logged in";
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => updateLoggedInEmail())
 
 loginForm.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -22,24 +34,13 @@ loginForm.addEventListener("submit", function (e) {
 
     saveLoginData(loginData);
     loggedInEmail = email;
-    loginForm.reset();
     window.location.href = "index.html";
-
-
     updateLoggedInEmail();
+
+
+
+
 });
-
-function updateLoggedInEmail() {
-    const currLogged = document.getElementById("currLogged");
-    if (loggedInEmail) {
-        currLogged.innerHTML = "Logged in as:" + loggedInEmail;
-    } else {
-        currLogged.innerHTML = "Not logged in";
-    }
-}
-
-updateLoggedInEmail();
-
 
 function saveLoginData(loginData) {
     fetch(client.loginDataUrl, {
