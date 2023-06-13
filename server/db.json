@@ -101,89 +101,9 @@
   ],
   "loginData": [
     {
-      "email": "dfasfaf@fdf",
-      "password": "asdasda",
+      "email": "Bajttur@gmail.com",
+      "password": "asdf",
       "id": 1
-    },
-    {
-      "email": "asdasd@gdsg",
-      "password": "SDFS",
-      "id": 2
-    },
-    {
-      "email": "TEST@d",
-      "password": "dfsfsdf",
-      "id": 3
-    },
-    {
-      "email": "Bajttur@gmail.com",
-      "password": "d",
-      "id": 4
-    },
-    {
-      "email": "mihaihaltsmaul@g",
-      "password": "f",
-      "id": 5
-    },
-    {
-      "email": "hqo@gs",
-      "password": "wqd",
-      "id": 6
-    },
-    {
-      "email": "Bajttur@gmail.com",
-      "password": "asd",
-      "id": 7
-    },
-    {
-      "email": "xsda@dsa",
-      "password": "asdsa",
-      "id": 8
-    },
-    {
-      "email": "Bajttur@gmail.com",
-      "password": "asdsada",
-      "id": 9
-    },
-    {
-      "email": "asdasd@gdsg",
-      "password": "sad",
-      "id": 10
-    },
-    {
-      "email": "Bajttur@gmail.com",
-      "password": "casd",
-      "id": 11
-    },
-    {
-      "email": "Bajttur@gmail.com",
-      "password": "sadsa",
-      "id": 12
-    },
-    {
-      "email": "Bajttur@gmail.com",
-      "password": "sadsa",
-      "id": 13
-    },
-    {
-      "email": "Bajttur@gmail.com",
-      "password": "sadad",
-      "id": 14
-    },
-    {
-      "email": "asdad@sda",
-      "password": "asdasd",
-      "id": 15
-    },
-    {
-      "email": "asdasd@gdsg",
-      "password": "asd",
-      "id": 16
-    },
-    {
-      "email": "Bajttur@gmail.com",
-      "password": "asdasd",
-      "id": 17
     }
   ],
   "bookedTables": [],
