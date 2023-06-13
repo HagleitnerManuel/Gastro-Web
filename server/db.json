@@ -100,71 +100,10 @@
     }
   ],
   "loginData": [
-    {
-      "email": "dsfsdf@fdf",
-      "password": "asdasd",
-      "id": 1
-    },
-    {
-      "email": "Bajttur@gmail.com",
-      "password": "test",
-      "id": 2
-    },
-    {
-      "email": "Sewrv@fdsf",
-      "password": "asdasd",
-      "id": 3
-    },
-    {
-      "email": "Bajttur@gmail.com",
-      "password": "asdasd",
-      "id": 4
-    },
-    {
-      "email": "Bajttur@gmail.com",
-      "password": "asdasd",
-      "id": 5
-    },
-    {
-      "email": "Bajttur@gmail.com",
-      "password": "tjtj",
-      "id": 6
-    },
-    {
-      "email": "mihaiitza@gmail.com",
-      "password": "bajtur",
-      "id": 7
-    },
-    {
-      "email": "mihaiitza@gmail.com",
-      "password": "asdadwads",
-      "id": 8
-    },
-    {
-      "email": "Bajttur@gmail.com",
-      "password": "jreljf",
-      "id": 9
-    }
+
   ],
   "bookedTables": [
-    {
-      "name": "Bajtur",
-      "phone": "0660 7449142",
-      "person": "5-person",
-      "date": "2023-06-12",
-      "time": "02:00pm",
-      "message": "Test",
-      "id": 1
-    },
-    {
-      "name": "Mihai Borza",
-      "phone": "+436706062962",
-      "person": "7-person",
-      "date": "2023-06-28",
-      "time": "09:00pm",
-      "message": "Bitte ohne Besteck",
-      "id": 2
-    }
+
   ],
   "profile": {
     "name": "wmc"

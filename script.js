@@ -79,6 +79,7 @@ registerLinkId.addEventListener('click', ()=> {
 loginLink.addEventListener('click', ()=> {
     wrapper.classList.remove('active');
 });
+
 /**
  * HERO SLIDER
  */
