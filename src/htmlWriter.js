@@ -16,6 +16,7 @@ $(() =>{
 function renderItems(list, listDiv){
     let html = "<div class=\"container\">";
     let otherHtml = "<div style=\"display:flex; flex-direction:column\">";
+
     function renderItem(item){
         html += "<li style='padding-top: 5rem'>"
         html += "<div class=\"menu-card hover:card\">"
